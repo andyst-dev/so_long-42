@@ -1,9 +1,9 @@
 # so_long
 
 A small 2D game developed as part of the 42 curriculum.
-This project consists of building a tile-based game in which the player collects every collectible on the map and reaches the exit, while the program validates the map, renders the scene, and handles user input through MiniLibX.
+`so_long` is a small tile-based game built around map parsing, player movement and rendering with MiniLibX.
 
-`so_long` was designed to strengthen core C skills around graphical programming, event handling, map parsing, and basic gameplay logic.
+It was a good way to build solid foundations in graphical programming, event handling, map validation and basic gameplay logic in C.
 
 ## Features
 - 2D tile-based rendering with MiniLibX
@@ -30,10 +30,10 @@ This project consists of building a tile-based game in which the player collects
 - `Makefile` — builds the `so_long` executable
 
 ## Mandatory part
-The mandatory part implements a simple graphical game based on a valid map description.
+The mandatory part focuses on the game logic required to load a valid map, display it and let the player reach the exit.
 
 ### Program
-- `so_long` — takes a `.ber` map file as argument, validates it, opens a window, and runs the game loop
+- `so_long` — takes a `.ber` map file as argument, validates it, opens a window and runs the game loop
 
 ### Core behavior
 - reads and validates a map file
@@ -52,9 +52,9 @@ The mandatory part implements a simple graphical game based on a valid map descr
 - `E` — exit
 - `P` — player starting position
 
-## Bonus part
-The 42 subject bonus may include animated sprites, enemies, or an on-screen move counter.
-This repository mainly reflects the core mandatory game implementation.
+<p align="center">
+  <img src="assets/so_long-demo.gif" alt="so_long gameplay demo">
+</p>
 
 ## Build
 Build the project:
@@ -81,13 +81,6 @@ Rebuild everything:
 make re
 ```
 
-## Output
-The project builds one executable:
-
-```bash
-so_long
-```
-
 ## Usage
 Run the program with a valid map file:
 
@@ -97,10 +90,10 @@ Run the program with a valid map file:
 
 ## Notes
 This project was developed on macOS and the repository is currently configured for the macOS version of MiniLibX.
-The provided build setup therefore targets macOS first, and no Linux-specific adaptation is included in this repository.
+The provided build setup therefore targets macOS first and no Linux-specific adaptation is included in this repository.
 
 ## Learning outcomes
-This project was an introduction to small-scale graphical programming in C.
+This project was my first real introduction to small-scale graphical programming in C.
 It helped build solid foundations in:
 - map parsing and validation
 - path verification
